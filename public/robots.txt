@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://raphaelchelly.com/sitemap.xml
+Sitemap: https://harshwadhwa.com/sitemap.xml
