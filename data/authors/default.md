@@ -1,5 +1,5 @@
 ---
-name: Raphaël Chelly
+name: Harsh Wadhwa
 avatar: /static/images/avatar.jpg
 occupation: Marketing Project Manager
 company: Octopia
