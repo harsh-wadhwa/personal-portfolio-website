@@ -30,12 +30,12 @@ export default function Footer() {
           >
             notes
           </Link>
-          <Link
+          {/* <Link
             className="hover:text-primary-600 hover:underline dark:hover:text-primary-600"
             href="/projects"
           >
             projects
-          </Link>
+          </Link> */}
           <Link
             className="hover:text-primary-600 hover:underline dark:hover:text-primary-600"
             href="/about"

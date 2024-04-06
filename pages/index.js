@@ -23,13 +23,13 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="space-y-2 pt-6 pb-4 md:space-y-5">
-        <div className="flex flex-col-reverse items-start sm:flex-row">
+        <div className="flex flex-col-reverse items-start sm:flex-row md:justify-between">
           <div className="flex flex-col pr-8">
             <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
               Harsh Wadhwa
             </h1>
             <h2 className="mb-1 text-xl font-bold tracking-tight text-zinc-600 dark:text-white md:text-2xl">
-              Description Heading
+              Tech, People, Sports
             </h2>
           </div>
           <div className="relative mb-8 mr-auto w-[100px] sm:mb-0 sm:w-[200px]">
@@ -43,7 +43,10 @@ export default function Home({ posts }) {
           </div>
         </div>
         <p className="space-y-4 text-zinc-500 dark:text-slate-300">
-          <p className="my-4 leading-loose">Description</p>
+          <p className="my-4 leading-loose">
+            I am a dedicated Software Development Engineer with expertise in various technologies
+            and frameworks. I have worked with React, Express, Java Spring, NextJs, SQL and more.
+          </p>
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-center">
           <a
@@ -98,6 +101,12 @@ export default function Home({ posts }) {
             rel="noreferrer"
             target="_blank"
           >
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
+              <path
+                fill="#CB3837"
+                d="M0 0v512h512V0H0zm334.364 186.545h-56.727v56.727h-56.727v-56.727H113.455v56.727H56.728V113.454h277.636v186.545H512v56.727H113.455v56.727h170.909v56.727h56.727V256h56.727v-69.455z"
+              />
+            </svg>
             <span className="hidden sm:inline">NPM</span>
           </a>
         </div>
@@ -105,13 +114,13 @@ export default function Home({ posts }) {
           <div className="mt-2 justify-center"></div>
         </div>
       </div>
-      <div className="content mb-8">
+      {/* <div className="content mb-8">
         <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
         <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
           Some of the projects I have worked on
         </p>
-      </div>
-      <div className="container py-12">
+      </div> */}
+      {/* <div className="container py-12">
         <div className="-m-4 flex flex-wrap">
           {projectsData.map((d) => (
             <Card
@@ -123,9 +132,9 @@ export default function Home({ posts }) {
             />
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="content mt-12 sm:mt-24">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Experiences</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Experience</h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a

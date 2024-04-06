@@ -5,10 +5,10 @@ occupation: SDE-1
 company: Aumhum
 email: harsh.wadhwa1711@gmail.com
 linkedin: https://www.linkedin.com/in/harshwadhwa01/
-github: https://github.com/harsh-wadhwa/personal-portfolio-website
+github: https://github.com/harsh-wadhwa
 ---
 
-DESCRIPTION OF ME
+I am a dedicated Software Development Engineer with expertise in various technologies and frameworks. I have worked with React, Express, Java Spring, NextJs, SQL and more.
 
 ## Experience
 

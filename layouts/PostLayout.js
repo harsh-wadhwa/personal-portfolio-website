@@ -1,21 +1,21 @@
-import Link from '@/components/Link'
-import PageTitle from '@/components/PageTitle'
-import { BlogSEO } from '@/components/SEO'
-import siteMetadata from '@/data/siteMetadata'
-import formatDate from '@/lib/utils/formatDate'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import Image from '@/components/Image'
+import Link from '@/components/Link';
+import PageTitle from '@/components/PageTitle';
+import { BlogSEO } from '@/components/SEO';
+import siteMetadata from '@/data/siteMetadata';
+import formatDate from '@/lib/utils/formatDate';
+import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import Image from '@/components/Image';
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { date, title, slug, fileName, readingTime } = frontMatter
+  const { date, title, slug, fileName, readingTime } = frontMatter;
 
-  const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+  const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`;
   const discussUrl = (slug) =>
     `https://mobile.twitter.com/search?q=${encodeURIComponent(
       `${siteMetadata.siteUrl}/blog/${slug}`
-    )}`
+    )}`;
 
-  const pageViews = undefined
+  const pageViews = undefined;
 
   return (
     <>
@@ -69,40 +69,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           <div className="pb-8 " style={{ gridTemplateRows: 'auto 1fr' }}>
             <div className=" xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-4 dark:prose-dark">{children}</div>
-              <div className="flex justify-between pt-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={editUrl(fileName)}>{'Have a nice day 🌞'}</Link>
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-              </div>
             </div>
-            <footer>
-              <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
-                {prev && (
-                  <div className="pt-2 xl:pt-8">
-                    <Link
-                      href={`/blog/${prev.slug}`}
-                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                    >
-                      &larr; {prev.title}
-                    </Link>
-                  </div>
-                )}
-                {next && (
-                  <div className="pt-4 xl:pt-8">
-                    <Link
-                      href={`/blog/${next.slug}`}
-                      className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                    >
-                      {next.title} &rarr;
-                    </Link>
-                  </div>
-                )}
-              </div>
-            </footer>
           </div>
         </div>
       </article>
     </>
-  )
+  );
 }
