@@ -29,23 +29,42 @@ export default function Home({ posts }) {
               Harsh Wadhwa
             </h1>
             <h2 className="mb-1 text-xl font-bold tracking-tight text-zinc-600 dark:text-white md:text-2xl">
-              Tech, People, Sports
+              Software Engineer
             </h2>
           </div>
           <div className="relative mb-8 mr-auto w-[100px] sm:mb-0 sm:w-[200px]">
             <Image
-              src="/static/images/profile.jpg"
+              src="/static/images/profile_new.jpg"
               alt="avatar"
               width="200px"
               height="200px"
+              objectFit="contain"
               className="rounded-full"
             />
           </div>
         </div>
         <p className="space-y-4 text-zinc-500 dark:text-slate-300">
+          <a
+            className="focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md bg-blue-500 py-2 px-2.5 font-medium text-white shadow-lg shadow-blue-500/10 transition selection:bg-white/30 hover:bg-blue-500/80 hover:shadow-blue-500/5 focus:ring-blue-500/40 dark:bg-blue-400 dark:text-zinc-900 dark:shadow-blue-400/10 dark:selection:bg-zinc-900/30 dark:hover:bg-blue-400/80 dark:hover:shadow-blue-400/5 dark:focus:ring-blue-400/40 sm:w-auto sm:px-3 sm:pl-2.5"
+            href="https://drive.google.com/file/d/1o-UqvjZuXoWN1GfOjVkIQVsludwAc0kW/view"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <span className="hidden sm:inline">Resume</span>
+          </a>
           <p className="my-4 leading-loose">
-            I am a dedicated Software Development Engineer with expertise in various technologies
-            and frameworks. I have worked with React, Express, Java Spring, NextJs, SQL and more.
+            Hola! I am an experienced Software Development Engineer with a strong command of
+            frontend technologies including React, Redux, and Next.js, as well as backend frameworks
+            like Spring Boot and Express. Proficient in leveraging Firebase, AWS EC2, EBS,
+            Cloudfront, and S3 to build and scale robust applications. I&apos;ve also developed an
+            open-source video calling solution on NPM, with over 75 weekly downloads.
+          </p>
+          <p>
+            Recognized for deep technical expertise, adaptability, and problem-solving skills at the
+            intersection of business and technology.
+          </p>
+          <p className="my-4 leading-loose">
+            Explore more of my work and articles in Notes and About sections.
           </p>
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-center">
