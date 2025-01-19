@@ -50,7 +50,7 @@ export default function Home({ posts }) {
             rel="noreferrer"
             target="_blank"
           >
-            <span className="hidden sm:inline">Resume</span>
+            <span>Resume</span>
           </a>
           <p className="my-4 leading-loose">
             Hola! I am an experienced Software Development Engineer with a strong command of

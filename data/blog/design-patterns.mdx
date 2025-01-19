@@ -1,0 +1,108 @@
+---
+title: Design Patterns - Why & How?
+date: '2025-01-19'
+tags: []
+draft: false
+images: ['/static/images/design-patterns-division.png']
+summary: 'Understanding the need and use of design patterns'
+---
+
+<Image
+  alt={`Nextjs`}
+  src={`/static/images/design-patterns-division.png`}
+  width={1920 / 2}
+  height={1080 / 2}
+  priority
+/>
+
+I spent some past time learning design patterns in-depth to get better with software design. Here's quick gist:
+
+Design Patterns are solutions to commonly occuring design problems in software. They are template solutions that follow many or all of SOLID principles solving maintainability and scalability out of the box.
+
+<b>Why use them?</b>
+<ul>
+  <li>
+    Many of the design problems we encounter as developers have already been solved. Design Patterns
+    help avoid the need to create new solutions from scratch.
+  </li>
+  <li>They follow SOLID principles so it gets easier to manage the codebase.</li>
+  <li>
+    They provide a common vocabulary for developers, leading to better communication and better
+    solutions.
+  </li>
+</ul>
+
+<b>Design Patterns are categorised into 3 types:</b>
+
+<ol>
+  <li>
+    <b>Creational design patterns</b>: focus on object creation (you might have heard Factory, and
+    Builder)
+  </li>
+  <li>
+    <b>Structural design patterns</b>: focus on the composition of objects and classes
+  </li>
+  <li>
+    <b>Behavioral design patterns</b>: focus on the communication between objects
+  </li>
+</ol>
+
+There are 20+ patterns and all are very useful but here is the one that I found very interesting.
+
+<b>Flyweight Design Pattern</b>: Helps fit more objects into available RAM by keeping common parts
+of objects separate, for all objects to share, instead of keeping all the data in all the objects.
+
+Consider the focus app, <b>Forest</b>, that helps users stay productive by planting virtual trees when they remain focused on tasks. These trees represent the user’s progress and focus sessions.
+
+<Image
+  alt={`Nextjs`}
+  src={`/static/images/forest-app.png`}
+  width={1920 / 2}
+  height={1080 / 2}
+  priority
+/>
+
+If the app creates individual objects for each tree, with their species, size, animation, sound effects, and other data - it could lead to a lot of redundant data being stored in memory, which will slow down the app and hog memory.
+
+Here we can use the flyweight pattern.
+
+The data for each tree can be divided into these states:
+
+<ul>
+  <li>
+    <b>Intrinsic state (shared, immutable) </b>: species, appearance, animation, sounds
+  </li>
+  <li>
+    <b>Extrinsic state </b>: growth progress, size, position
+  </li>
+</ul>
+
+When a user plants an oak tree, the intrinsic state is stored once and shared, while the extrinsic state is unique to that tree and stored separately.
+All the oak tree objects use the same memory reference to get that shared intrinsic state data.
+
+The folks at <a href="https://www.linkedin.com/company/seekrtech-tw" target="_blank" rel="noreferrer">SeekrTech</a> (publishers of Forest app) might already be doing it.
+
+If you need more code examples: <a href="https://github.com/harsh-wadhwa/design-patterns-and-architecture" target="_blank" rel="noreferrer">Design Patterns Git Repo</a>
+
+Here are the resources that were super useful and I highly recommend:
+
+<ol>
+  <li>
+    Shabbir Dawoodi's Design Patterns Master Class{' '}
+    <a href="https://www.youtube.com/watch?v=vap9ACtc_tU" target="_blank" rel="noreferrer">
+      (link)
+    </a>
+  </li>
+  <li>
+    Refactoring Guru{' '}
+    <a href="https://refactoring.guru/design-patterns" target="_blank" rel="noreferrer">
+      (link)
+    </a>
+  </li>
+</ol>
+
+You can read the full text here: <a href="https://harshwadhwa.com/blog/design-patterns" target="_blank" rel="noreferrer">Design Patterns - Why and How?</a> on harshwadhwa.com
+
+Thoughts or suggestions ?
+
+---
