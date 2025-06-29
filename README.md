@@ -1,5 +1,3 @@
-![raph-www-banner](/public/static/images/twitter-card.png)
-
 # Harsh Wadhwa personal website (https://harshwadhwa.com)
 
 Welcome to my personal website and portfolio. 🛸
