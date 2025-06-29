@@ -14,7 +14,7 @@ I am a dedicated Software Development Engineer with expertise in various technol
 
 ### SDE-1 @ Aumhum
 
-`July 2023 - Today`
+`July 2023 - March 2025`
 
 ● Developed RESTful APIs using Java Spring Framework, along with data retrieval and manipulation using SQL queries with MongoDB. \
 ● Pioneered the development of a comprehensive real-time video communication feature by implementing a React and Express based project from scratch, leveraging Typescript, Redux, Tailwind, Material UI, styled components, and Agora engine. The initiative resulted in a groundbreaking 40% increase in user engagement. \

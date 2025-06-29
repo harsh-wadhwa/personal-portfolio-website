@@ -158,6 +158,37 @@ export default function Home({ posts }) {
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
               className="link focusable font-medium text-zinc-800 dark:text-white"
+              href="https://godaddy.com/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Image
+                src="/static/images/workxp/godaddy_logo.png"
+                alt="GoDaddy"
+                width="50px"
+                height="50px"
+                className="rounded-md"
+              />
+            </a>
+            <div className="flex min-w-0 flex-col justify-center">
+              <p className="mb-1 flex items-center">
+                <span className="truncate font-semibold text-zinc-700 dark:text-zinc-100">
+                  GoDaddy
+                </span>
+                <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+                  April 2025
+                  <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
+                  Today
+                </span>
+              </p>
+              <p className="flex items-center truncate">
+                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">SDE-II</span>
+              </p>
+            </div>
+          </li>          
+          <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
+            <a
+              className="link focusable font-medium text-zinc-800 dark:text-white"
               href="https://aumhum.com/"
               rel="noreferrer"
               target="_blank"
@@ -178,11 +209,11 @@ export default function Home({ posts }) {
                 <span className="ml-1.5 inline-block flex-none translate-y-px rounded bg-zinc-100 p-1 text-xs font-medium leading-none text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
                   July 2023
                   <span className="text-zinc-350 dark:text-zinc-550 mx-0.5">—</span>
-                  Today
+                  March 2025
                 </span>
               </p>
               <p className="flex items-center truncate">
-                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">SDE-1</span>
+                <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">SDE-I</span>
               </p>
             </div>
           </li>
@@ -214,7 +245,7 @@ export default function Home({ posts }) {
               </p>
               <p className="flex items-center truncate">
                 <span className="flex-1 truncate text-zinc-500 dark:text-zinc-400">
-                  Software Development Intern
+                  SDE Intern
                 </span>
               </p>
             </div>
