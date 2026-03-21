@@ -1,7 +1,5 @@
 /**
- * Activity tracker for /friends — static for now; replace with API/Mongo fetch later.
- *
- * To add a column: append to `activityColumns`, then set values per day under `entries[columnKey]`.
+ * Friends tracker column config. Week rows are built at runtime (Mon–Sun) and merged with MongoDB.
  */
 export const activityColumns = [
   { key: 'steps', label: 'Steps' },
@@ -16,31 +14,24 @@ export const activityColumns = [
 
 /** @typedef {Record<string, number | boolean | string | null | undefined>} ActivityEntries */
 
-/** Defaults for optional metrics — all null until filled (e.g. from DB). */
-const nullMetricDefaults = {
-  fiveKmsTiming: null,
-  caloriesKcal: null,
-  protein: null,
-  bodyWeight: null,
-  measurements: null,
+export function emptyEntries() {
+  /** @type {ActivityEntries} */
+  const e = {}
+  for (const col of activityColumns) {
+    e[col.key] = null
+  }
+  return e
 }
 
-/** @type {{ date: string; label: string; entries: ActivityEntries }[]} */
-export const friendsActivityWeek = [
-  { date: '2026-03-16', label: 'Mon, 16 Mar', entries: { ...nullMetricDefaults } },
-  { date: '2026-03-17', label: 'Tue, 17 Mar', entries: { ...nullMetricDefaults } },
-  { date: '2026-03-18', label: 'Wed, 18 Mar', entries: { ...nullMetricDefaults } },
-  {
-    date: '2026-03-19',
-    label: 'Thu, 19 Mar',
-    entries: {
-      ...nullMetricDefaults,
-      steps: 7234,
-      water: null,
-      weightTraining: true,
-    },
-  },
-  { date: '2026-03-20', label: 'Fri, 20 Mar', entries: { ...nullMetricDefaults } },
-  { date: '2026-03-21', label: 'Sat, 21 Mar', entries: { ...nullMetricDefaults } },
-  { date: '2026-03-22', label: 'Sun, 22 Mar', entries: { ...nullMetricDefaults } },
-]
+/**
+ * @param {{ date: string, label: string }[]} dayMetas
+ * @param {Record<string, { entries?: ActivityEntries }>} latestByDate
+ */
+export function mergeWeekRows(dayMetas, latestByDate) {
+  const blank = emptyEntries()
+  return dayMetas.map(({ date, label }) => ({
+    date,
+    label,
+    entries: { ...blank, ...(latestByDate[date]?.entries || {}) },
+  }))
+}
