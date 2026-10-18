@@ -43,29 +43,9 @@ export default function Home({ posts }) {
             />
           </div>
         </div>
-        <p className="space-y-4 text-zinc-500 dark:text-slate-300">
-          <a
-            className="focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md bg-blue-500 py-2 px-2.5 font-medium text-white shadow-lg shadow-blue-500/10 transition selection:bg-white/30 hover:bg-blue-500/80 hover:shadow-blue-500/5 focus:ring-blue-500/40 dark:bg-blue-400 dark:text-zinc-900 dark:shadow-blue-400/10 dark:selection:bg-zinc-900/30 dark:hover:bg-blue-400/80 dark:hover:shadow-blue-400/5 dark:focus:ring-blue-400/40 sm:w-auto sm:px-3 sm:pl-2.5"
-            href="https://drive.google.com/file/d/1o-UqvjZuXoWN1GfOjVkIQVsludwAc0kW/view"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <span>Resume</span>
-          </a>
-          <p className="my-4 leading-loose">
-            Hola! I am an experienced Software Development Engineer with a strong command of
-            frontend technologies including React, Redux, and Next.js, as well as backend frameworks
-            like Spring Boot and Express. Proficient in leveraging Firebase, AWS EC2, EBS,
-            Cloudfront, and S3 to build and scale robust applications. I&apos;ve also developed an
-            open-source video calling solution on NPM, with over 75 weekly downloads.
-          </p>
-          <p>
-            Recognized for deep technical expertise, adaptability, and problem-solving skills at the
-            intersection of business and technology.
-          </p>
-          <p className="my-4 leading-loose">
-            Explore more of my work and articles in Notes and About sections.
-          </p>
+        <p className="text-zinc-500 dark:text-slate-300 leading-relaxed">
+          Backend engineer at GoDaddy. I build payment infrastructure, distributed systems, and
+          occasionally write about what I&apos;m learning.
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-center">
           <a
@@ -113,20 +93,6 @@ export default function Home({ posts }) {
               />
             </svg>
             <span className="hidden sm:inline">Email</span>
-          </a>
-          <a
-            className="focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md bg-blue-500 py-2 px-2.5 font-medium text-white shadow-lg shadow-blue-500/10 transition selection:bg-white/30 hover:bg-blue-500/80 hover:shadow-blue-500/5 focus:ring-blue-500/40 dark:bg-blue-400 dark:text-zinc-900 dark:shadow-blue-400/10 dark:selection:bg-zinc-900/30 dark:hover:bg-blue-400/80 dark:hover:shadow-blue-400/5 dark:focus:ring-blue-400/40 sm:w-auto sm:px-3 sm:pl-2.5"
-            href="https://www.npmjs.com/~harshwadhwa"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
-              <path
-                fill="#CB3837"
-                d="M0 0v512h512V0H0zm334.364 186.545h-56.727v56.727h-56.727v-56.727H113.455v56.727H56.728V113.454h277.636v186.545H512v56.727H113.455v56.727h170.909v56.727h56.727V256h56.727v-69.455z"
-              />
-            </svg>
-            <span className="hidden sm:inline">NPM</span>
           </a>
         </div>
         <div className="flex w-full justify-center">
