@@ -44,8 +44,7 @@ export default function Home({ posts }) {
           </div>
         </div>
         <p className="text-zinc-500 dark:text-slate-300 leading-relaxed">
-          Backend engineer at GoDaddy. I build payment infrastructure, distributed systems, and
-          occasionally write about what I&apos;m learning.
+          Backend engineer at GoDaddy. I build the purchase and order processing systems.
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-center">
           <a
